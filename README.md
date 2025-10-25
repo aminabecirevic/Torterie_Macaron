@@ -4,15 +4,14 @@ Ovaj projekat prikazuje **web stranicu izrađenu u Visual Studio 2022** sa front
 
 ## Struktura projekta
 - `Projektni zadatak - RWA/Controllers/` – backend kontroleri
-- `Projektni zadatak - RWA/Views/` ili `Pages/` – frontend stranice
-- `Projektni zadatak - RWA/wwwroot/` – CSS, JS, slike
+- `Projektni zadatak - RWA/wwwroot/` – frontend stranice, JS, slike
 - `Projektni zadatak - RWA/appsettings.json` – konfiguracija baze
 - `Projektni zadatak - RWA/Program.cs` / `Startup.cs` – pokretanje aplikacije
 - `Projektni zadatak - RWA.sln` – Visual Studio solution fajl
 
 ## Korištene tehnologije
 - HTML, CSS, JavaScript
-- C# (.NET Web API / MVC)
+- C# (.NET Web API)
 - SQL Server baza podataka
 - Fetch API za komunikaciju frontend-backend
 
