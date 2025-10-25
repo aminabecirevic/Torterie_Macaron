@@ -1,0 +1,6 @@
+@Projektni_zadatak___RWA_HostAddress = http://localhost:5096
+
+GET {{Projektni_zadatak___RWA_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

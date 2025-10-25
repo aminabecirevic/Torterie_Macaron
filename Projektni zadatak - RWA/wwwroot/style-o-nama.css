@@ -1,0 +1,422 @@
+/*CSS file za dio "O nama*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#333;
+    background-color:white;
+}
+.navbar{
+    background-color: transparent !important;
+    width: 100%;
+}
+.navbar-nav {
+    display: grid;
+    grid-template-columns: repeat(6, auto); 
+    gap: 20px; 
+    justify-content: center; 
+    align-items: center;
+}
+.icon-group {
+    margin-left: auto;
+    float: right; /* Guranje ikonice u desni ugao */
+}
+.icon-group img{
+    width: 20px;
+    height: 20px;
+}.header {
+    background-image: none !important;
+}
+.torterie h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.torterie p{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #333;
+    font-size: 18px;
+}
+.left{
+    margin-top: 20px;
+    color: #333;
+    padding-left: 30px;
+    padding-right: 0px;
+    text-align:start;
+}
+.left-content {
+    max-width: 1300px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.text{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
+}
+.left-content h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10;
+}
+.left-content p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.9;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+.left-image img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px; 
+    width: 580px;
+    height: 380px;
+    margin-right: 30px;
+}
+.right{
+    background-color: white;
+    margin-top: 20px;
+    color:#333;
+    padding-left: 50px;
+    text-align:start;
+    background-color: #efe1d3;
+}
+.right-content{
+    max-width: 1300px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 10px;
+}
+.text-right{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
+}
+.right-content h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.right-content p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.9;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+.right-image img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px; 
+    width: 580px;
+    height: 380px;
+    margin-right: 30px;
+}
+.sponsor-image{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.sponsor-container{
+    background-color: #efe1d3;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+.sponsor-content{
+    max-width: 300px;
+}
+.sponsor2{
+    width: 60px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.sponsor-content h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.sponsor-content p{
+    font-size: 16px;
+    color: #666;
+}
+.footer{
+    background-color: #2f251e;
+    margin: 0;
+    padding-left:30px;
+    padding-top: 50px;
+    padding-right: 160px;
+    color: #ffffff;
+}
+.information{
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+.information p{
+    color:#efe1d3;
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.information h2{
+    color:#efe1d3;
+    font-size: 18px;
+}
+.information-image{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.pay-content{
+    max-width: 250px;
+}
+.pay-content img{
+    height: 35px;
+    border-radius: 0;
+}
+.social{
+    display: flex;
+    gap:15px;
+    flex-wrap: wrap;
+}
+.help-content a{
+    text-decoration: none;
+    line-height: 2px;
+}
+.private-content a{
+    text-decoration: none;
+    line-height: 2px;
+}
+.macaron{
+    padding-bottom: 20px;
+    font-size: 13px;
+    text-align: left; 
+}
+
+@media (max-width: 768px) {
+    .torterie h1{
+        font-size: 40px;
+    }
+    .main h2, .main p { 
+        display: none;
+    }
+    #btn {
+        position: absolute;
+        bottom: 10px; 
+        left: 10px; 
+        padding: 7px 20px; 
+        border-radius: 20px; 
+    }
+    .main {
+        position: relative;  
+        min-height: 300px; 
+        padding: 40px 20px; 
+    }
+    .main {
+        background-image: url(images/background-media.png);
+        background-size: cover;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        padding-top: 10px;
+    }
+    .navbar{
+        background-color: white !important;
+    }
+    /* Navbar - sakrivanje ikonica na manjim uređajima */
+    .icon-group {
+        display: none !important;
+    }
+    .left{
+        padding-left: 2px;
+    }
+    .left-content {
+        flex-direction: column; 
+        align-items: center; 
+        padding-top: 50px; 
+        padding-bottom: 50px; 
+    }
+    .text {
+        width: 90%; 
+        text-align: start; 
+    }
+    .left-image {
+        width: 90%; 
+        margin-top: 20px; 
+    }
+    .left-image img {
+        width: 100%; 
+        height: auto; 
+        border-radius: 20px; 
+    }
+    .right{
+        padding-left: 2px;
+    }
+    .right-content {
+        flex-direction: column; 
+        align-items: center; 
+        padding-top: 50px; 
+        padding-bottom: 50px; 
+    }
+    .text-right {
+        width: 90%; 
+        text-align: start; 
+    }
+    .right-image {
+        width: 90%; 
+        margin-top: 20px; 
+    }
+    .right-image img {
+        width: 100%; 
+        height: auto; 
+        border-radius: 20px; 
+    }
+    .sponsor-container{
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .information{
+        display:flex;
+        flex-direction: column;
+    }
+    .information p{
+        font-size: 12px;
+        line-height: 2;
+        margin: 15px 0;
+    }
+    .footer{
+        padding: 20px;
+        text-align: left;
+    }
+    .victus{
+        padding-bottom: 40px;
+        padding-top: 30px;
+    }
+    .help-content{
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    .information-content, .pay-content, .help-content, .private-content{
+        max-width: 100%;
+        text-align: left;
+    }
+    .information h2{
+        font-size: 16px;
+    }
+    .information-image{
+        justify-content: center;
+    }
+}
+/*Media - uređaji od 769-1024px*/
+@media (min-width:769px) and (max-width: 1024px){
+    .icon-group {
+        display: none !important;
+    }
+    .navbar {
+        background-color: white !important;
+    }
+    .main {
+        padding: 20px;
+    }
+    .main h2, .main p { 
+        display: none;
+    }
+    .text{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .left-image{
+        width: 50%;
+        padding-right: 30px;
+    }
+    .text-right{
+        padding-right: 30px;
+    }
+    .text-right p{
+        font-size: 18px;
+    }
+    .right-image{
+        width: 50%;
+    }
+    .sponsor-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        padding: 50px;
+    }
+    .sponsor2{
+        width: 40%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .sponsor-content h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .sponsor-content p{
+        font-size: 16px;
+        color: #666;
+    }
+    .help-content{
+        padding-top: 30px;
+    }
+    .information{
+        display: flex;
+        flex-direction: column;
+    }
+    .victus{
+        padding-bottom: 50px;
+    }
+}
+/*Media - uređaji koji su minimalno 769px*/
+@media (min-width: 769px) {
+    .left-content, .right-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* Vertikalno centriranje unutar prostora */
+        justify-content: space-between; /* Održava razmak između slike i teksta */
+        margin: 0 auto; /* Horizontalno centriranje cijelog diva */
+    }
+    .left-image img, .right-image img {
+        width: 100%;
+        height: auto;
+        max-width: 580px;
+        max-height: 400px;
+        object-fit: cover;
+    }
+    .text, .text-right {
+        width: 50%;
+        text-align: left; 
+    }
+}

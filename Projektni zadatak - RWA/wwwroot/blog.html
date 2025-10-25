@@ -1,0 +1,193 @@
+<!--Sekcija u navbaru "Blog"-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Torterie Macaron</title>
+    <!--Poziv CSS-a-->
+    <link rel="stylesheet" href="style.css">
+    <!--Poziv JS-a-->
+    <script src="korpa.js"></script>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--Postavlja favicon-->
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+    <!--Urađen internal CSS za dio koji se razlikovao u odnosu na glavni CSS file-->
+    <style>
+        .header {
+            background-image: none !important;
+        }
+        .blog h1{
+            text-align: center;
+            font-size: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .news-content a{
+            font-size: 18px;
+        }
+        #korpaLista {
+            list-style-type: none;
+        }
+
+        #korpaPrikaz h4 {
+            padding-left: 30px;
+            padding-bottom: 20px;
+        }
+        #zatvori {
+            margin-left: 30px;
+        }
+        #korpaLista li {
+            margin-bottom: 15px; 
+        }
+        .stavka-korpe {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            gap: 20px; 
+        }
+        .korpa-slika {
+            width: 100px;
+            border-radius: 10px;
+        }
+        .korpa-detalji {
+            flex: 1;
+        }
+    </style>
+    <!--Navbar - preuzet sa Bootstrapa -->
+    <div class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="180px" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto" style="margin-right: 30%;">
+                        <li class="nav-item"><a class="nav-link text-dark" href="proizvodi.html">Proizvodi</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="nase_slastice.html">Naše slastice</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="o_nama.html">O nama</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="https://www.torterie-macaron.com/pridruzi-se-nasem-slatkom-timu/">Posao u Torterie</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="https://www.torterie-macaron.com/kontakt/">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="icon-group">
+                    <a href="" class="search-icon" title="Search"><img src="images/search.png" alt="Search"></a>
+                    <a href="account.html" class="contact-icon" title="Account"><img src="images/contact.png" alt="Contact"></a>
+                    <a class="shopping-bag-icon" title="Shopping chart" onclick="prikaziKorpu()"><img src="images/shopping-bag.png" alt="Shop"></a>
+                </div>
+            </div>
+        </nav>
+        <div id="korpaPrikaz" style="display:none; padding: 20px; background-color: #f8f8f8;">
+            <h4>Vaša korpa:</h4>
+            <ul id="korpaLista"></ul>
+            <button class="btn" id="zatvori" onclick="document.getElementById('korpaPrikaz').style.display='none'">Zatvori</button>
+        </div>
+    </div>
+    <!--Blog - sadržaj-->
+    <div class="blog">
+      <h1>BLOG</h1>
+    </div>
+    <div class="news">
+      <div class="news-container">
+        <div class="news-content">
+          <a href="https://www.torterie-macaron.com/najbolja-osvjezenja-ovog-ljeta-pronadi-u-torterie-macaron/"><img src="images/refreshment.png" width="380"></a>
+          <p class="info"><a href="https://www.torterie-macaron.com/najbolja-osvjezenja-ovog-ljeta-pronadi-u-torterie-macaron/">Najbolja osvježenja ovog ljeta pronađi u Torterie Macaron!</a></p>
+          <a href="https://www.torterie-macaron.com/najbolja-osvjezenja-ovog-ljeta-pronadi-u-torterie-macaron/" id="btn3">PROČITAJ VIŠE</a>
+        </div>
+        <div class="news-content">
+          <a href="https://www.torterie-macaron.com/rucno-radeni-sladoledi-od-sada-dostupni-po-cijeloj-hrvatskoj/"><img src="images/ice-cream.png" width="380"></a>
+          <p class="info"><a href="https://www.torterie-macaron.com/rucno-radeni-sladoledi-od-sada-dostupni-po-cijeloj-hrvatskoj/">Ručno rađeni sladoledi od sada dostupni po cijeloj Hrvatskoj!</a></p>
+          <a href="https://www.torterie-macaron.com/rucno-radeni-sladoledi-od-sada-dostupni-po-cijeloj-hrvatskoj/" id="btn3">PROČITAJ VIŠE</a>
+        </div>
+        <div class="news-content">
+          <a href="https://www.torterie-macaron.com/novi-okusi-zanatskih-sladoleda-kreirani-za-uzivanje-kroz-cijelu-godinu/"><img src="images/ice-cream-flavor.png" width="380"></a>
+          <p class="info"><a href="https://www.torterie-macaron.com/novi-okusi-zanatskih-sladoleda-kreirani-za-uzivanje-kroz-cijelu-godinu/">Novi okusi zanatskih sladoleda kreirani za uživanje kroz cijelu godinu</a></p>
+          <a href="https://www.torterie-macaron.com/novi-okusi-zanatskih-sladoleda-kreirani-za-uzivanje-kroz-cijelu-godinu/" id="btn3">PROČITAJ VIŠE</a>
+        </div>
+      </div>
+    </div>
+    <div class="other">
+      <div class="other-container">
+        <div class="other-content">
+          <a href="https://www.jutarnji.hr/dobrahrana/price/ovo-je-jedan-od-najboljih-deserata-koji-trenutno-mozete-pojesti-u-zagrebackim-slasticarnicama-15360097"><img src="images/about-us1.png" width="380"></a>
+          <p class="content"><a href="https://www.jutarnji.hr/dobrahrana/price/ovo-je-jedan-od-najboljih-deserata-koji-trenutno-mozete-pojesti-u-zagrebackim-slasticarnicama-15360097">Ovo je jedan od najboljih deserata koji trenutno možete pojesti u zagrebačkim slastičarnicama</a></p>
+          <a href="https://www.jutarnji.hr/dobrahrana/price/ovo-je-jedan-od-najboljih-deserata-koji-trenutno-mozete-pojesti-u-zagrebackim-slasticarnicama-15360097" id="btn3">PROČITAJ VIŠE</a>
+        </div>
+        <div class="other-content">
+          <a href="https://www.jutarnji.hr/dobrahrana/price/njihove-slastice-ubrajamo-medu-najbolje-u-gradu-a-sada-ih-mozete-i-naruciti-cijena-je-4-50-eura-po-komadu-15381202"><img src="images/about-us2.png" width="380"></a>
+          <p class="content"><a href="https://www.jutarnji.hr/dobrahrana/price/njihove-slastice-ubrajamo-medu-najbolje-u-gradu-a-sada-ih-mozete-i-naruciti-cijena-je-4-50-eura-po-komadu-15381202">Njihove slastice ubrajamo među najbolje u gradu, a sada ih možete i naručiti, cijena je 4,50 eura po komadu</a></p>
+          <a href="https://www.jutarnji.hr/dobrahrana/price/njihove-slastice-ubrajamo-medu-najbolje-u-gradu-a-sada-ih-mozete-i-naruciti-cijena-je-4-50-eura-po-komadu-15381202" id="btn3">PROČITAJ VIŠE</a>
+        </div>
+        <div class="other-content">
+          <a href="https://www.jutarnji.hr/dobrahrana/vodici/gdje-u-zagrebu-i-okolici-pojesti-dobar-kolac-slasticarnica-je-puno-ali-ovo-su-provjereno-dobre-adrese-15436400"><img src="images/about-us3.png" width="380"></a>
+          <p class="content"><a href="https://www.jutarnji.hr/dobrahrana/vodici/gdje-u-zagrebu-i-okolici-pojesti-dobar-kolac-slasticarnica-je-puno-ali-ovo-su-provjereno-dobre-adrese-15436400">Gdje u Zagrebu (i okolici) pojesti dobar kolač? Slastičarnica je puno, ali ovo su provjereno dobre adrese</a></p>
+          <a href="https://www.jutarnji.hr/dobrahrana/vodici/gdje-u-zagrebu-i-okolici-pojesti-dobar-kolac-slasticarnica-je-puno-ali-ovo-su-provjereno-dobre-adrese-15436400" id="btn3">PROČITAJ VIŠE</a>
+        </div>
+      </div>
+    </div>
+    <div class="sponsor">
+      <img class="sponsor-image" src="images/sponsor.png">
+      <div class="sponsor-container">
+        <div class="sponsor-content">
+          <img class="sponsor2" src="images/info1.png" width="70px">
+          <h3>Hrvatski proizvod i ručna izrada</h3>
+          <p>Izrada slastica od visokokvalitetnih sastojaka.</p>
+        </div>
+        <div class="sponsor-content">
+          <img class="sponsor2" src="images/info2.png" width="70px">
+          <h3>Dostava na adresu</h3>
+          <p>Cijena dostave na području Zagreba iznosi 10 €, a za Veliku Goricu 13 €.</p>
+        </div>
+        <div class="sponsor-content">
+          <img class="sponsor2" src="images/info3.png" width="70px">
+          <h3>Besplatna dostava</h3>
+          <p>Besplatna dostava za sve narudžbe iznad 80 € na području Zagreba, a za Veliku Goricu iznad 100 €.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <img class="footer-logo" src="images/logo-white.png" width="130px">
+      <div class="information">
+        <div class="information-content">
+          <p>Torterie Macaron d.o.o. <br>Zagreb (Grad Zagreb) <br>Avenija Dubrovnik 16/7 <br>OIB: 89418743588 <br>Erste bank – HR5624020061500136030 <br>Temeljni kapital <br>118.840,00 €</p>
+          <a href="https://victus-group.com/"><img class="victus" src="images/victus.png" width="110px"></a>
+        </div>
+        <div class="pay-content">
+          <h2>NAČIN PLAĆANJA</h2>
+          <div class="information-image">
+            <a href="https://diners.com.hr/" title="Diners Club International"><img class="card" src="images/card1.png" width="50px"></a>
+            <a href="https://www.visa.com.hr/" title="Visa"><img class="card" src="images/card2.png" width="50px"></a>
+            <a href="https://www.mastercard.hr/hr-hr.html" title="MasterCard"><img class="card" src="images/card3.png" width="50px"></a>
+            <a href="https://www.mastercard.com/brandcenter/en/home" title="Maestro"><img class="card" src="images/card4.png" width="50px"></a>
+            <a href="https://www.discover.com/" title="Discover"><img class="card" src="images/card5.png" width="50px"></a>
+            <a href="https://www.mastercard.us/en-us.html" title="Mastercard Identity Check"><img class="card" src="images/card6.png" width="50px"></a>
+            <a href="https://www.visa.co.uk/products/visa-secure.html" title="Visa Secure"><img class="card" src="images/card7.png" width="50px"></a>
+            <a href="https://www.wspay.info/" title="WSpay - Web Secure Payment Gateway"><img class="card" src="images/card8.png" width="50px"></a>
+          </div>
+        </div>
+        <div class="help-content">
+          <h2>POMOĆ</h2>
+          <a href="https://www.torterie-macaron.com/kontakt/"><p>Kontakt</p></a>
+          <div class="social">
+            <a href="https://www.facebook.com/torteriemacaron?_rdc=1&_rdr#" title="Facebook"><img class="social-icon" src="images/facebook.png" width="25px"></a>
+            <a href="https://www.instagram.com/torterie_macaron/" title="Instagram"><img class="social-icon" src="images/instagram.png" width="25px"></a>
+            <a href="" title="Email"><img class="social-icon" src="images/mail.png" width="25px"></a>
+          </div>
+        </div>
+        <div class="private-content">
+          <a href="https://www.torterie-macaron.com/uvjeti-poslovanja/"><p>Uvjeti poslovanja</p></a>
+          <a href="https://www.torterie-macaron.com/izjava-o-privatnosti/"><p>Izjava o privatnosti</p></a>
+        </div>
+      </div>
+      <div class="macaron">
+        <hr>
+        <p>Torterie Macaron d.o.o , 2025. Sva prava pridržana</p>
+      </div>
+    </div>
+</body>
+</html>

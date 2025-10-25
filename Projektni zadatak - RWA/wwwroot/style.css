@@ -1,0 +1,1031 @@
+﻿/*Glavni CSS file*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: white;
+}
+
+.navbar {
+    background-color: transparent !important; /*Omogućava da navbar bude transparentan odnosno da može imati pozadinu*/
+    width: 100%;
+}
+
+.navbar-nav {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 20px;
+}
+
+.icon-group {
+    margin-left: auto;
+    float: right; /*Postavljanje ikonica u desni ugao*/
+}
+
+    .icon-group img {
+        width: 20px;
+        height: 20px;
+    }
+/*Postavljanje teksta na desnu stranu*/
+.main {
+    color: #333;
+    padding: 80px 50px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    min-height: 450px;
+}
+
+    .main h2 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 30px;
+    }
+
+    .main p {
+        margin-bottom: 35px;
+        line-height: 1.8; /*Razmak između redova*/
+        font-size: 15px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+
+#btn {
+    text-decoration: none;
+    color: white;
+    background-color: #2B1B17;
+    padding: 13px 20px;
+    border-radius: 25px;
+    font-size: 17px;
+    margin-left: 0;
+}
+
+    #btn:hover {
+        background-color: antiquewhite; /*Na prelaz mišem, button mijenja boju*/
+    }
+/*Postavljanje pozadine za navbar i main*/
+.header {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #333;
+    padding: 0;
+}
+/*Odvaja sekciju offer od header*/
+.offer {
+    margin-top: 100px;
+}
+
+    .offer h1 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 45px;
+        padding-bottom: 30px;
+        margin-left: 30px;
+        color: black;
+    }
+
+    .offer p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding-bottom: 25px;
+        margin-left: 30px;
+        color: grey
+    }
+
+.offer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+    .offer-container img {
+        border-radius: 30px;
+    }
+
+    .offer-container p {
+        text-align: left;
+        margin-left: 2px;
+        margin-top: 5px;
+    }
+
+    .offer-container a {
+        text-decoration: none; /*Uklanja ukrašavanje sa teksta - u ovom slučaju podvlačenje teksta koji je zapravo link*/
+        color: black;
+        font-size: 20px;
+    }
+
+.price {
+    color: grey;
+}
+
+.location {
+    background-color: #efe1d3;
+    margin-top: 20px;
+    color: #333;
+    padding-left: 50px;
+    text-align: start;
+}
+
+.location-content {
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.text {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
+}
+
+.location-content h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.location-content p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.9;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+/*Odnosi se na button u sekciji location*/
+.text a {
+    text-decoration: none;
+    color: white;
+    background-color: #2B1B17;
+    padding: 13px;
+    border-radius: 25px;
+    font-size: 17px;
+    margin-left: 0;
+    width: 130px;
+}
+
+#btn2:hover {
+    background-color: antiquewhite;
+}
+
+.location-image img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    width: 580px;
+    height: 380px;
+    margin-right: 30px;
+}
+
+.news {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-content: center;
+}
+
+.news-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.news h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #1a202c;
+    text-align: center;
+}
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+
+    .news-container img {
+        border-radius: 30px;
+    }
+
+    .news-container a {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-decoration: none;
+        color: #1a202c;
+    }
+
+#btn3 {
+    text-decoration: none;
+    color: white;
+    background-color: #2B1B17;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 17px;
+    margin-left: 0;
+}
+
+    #btn3:hover {
+        background-color: antiquewhite;
+    }
+
+.other {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    align-content: center;
+}
+
+.other-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.other h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #1a202c;
+}
+
+.other-container {
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+    .other-container img {
+        margin-top: 10px;
+        border-radius: 30px;
+    }
+
+    .other-container a {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #1a202c;
+        text-decoration: none;
+    }
+
+.quality {
+    background-color: #2f251e;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #efe1d3;
+    padding-left: 50px;
+    text-align: start;
+}
+
+.quality-content {
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-right: 10px;
+}
+
+.text-quality {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
+}
+
+.quality-content h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.quality-content p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.9;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.text-quality a {
+    text-decoration: none;
+    color: #2f251e;
+    background-color: #efe1d3;
+    padding: 13px;
+    border-radius: 25px;
+    font-size: 17px;
+    margin-left: 0;
+    width: 130px;
+}
+
+.quality-image img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    width: 580px;
+    height: 380px;
+    margin-right: 30px;
+}
+
+.sponsor-image {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sponsor-container {
+    background-color: #efe1d3;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.sponsor-content {
+    max-width: 300px;
+}
+
+.sponsor2 {
+    width: 60px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.sponsor-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.sponsor-content p {
+    font-size: 16px;
+    color: #666;
+}
+
+.footer {
+    background-color: #2f251e;
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-right: 160px;
+    color: #ffffff;
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+    .information p {
+        color: #efe1d3;
+        font-size: 14px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .information h2 {
+        color: #efe1d3;
+        font-size: 18px;
+    }
+
+.information-image {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.pay-content {
+    max-width: 250px;
+}
+
+    .pay-content img {
+        height: 35px;
+        border-radius: 0;
+    }
+
+.social {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.help-content a {
+    text-decoration: none;
+    line-height: 2px;
+}
+
+.private-content a {
+    text-decoration: none;
+    line-height: 2px;
+}
+
+.macaron {
+    padding-bottom: 20px;
+    font-size: 13px;
+    text-align: left;
+}
+
+.form-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.form-box {
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    background: white;
+    width: 600px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+/*Stilizovanje formi koje se nalaze na dijelu stranice Account*/
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    .form-group .toggle-password {
+        position: absolute;
+        right: 10px;
+        top: 35px;
+        font-size: 16px;
+    }
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-box button {
+    width: 20%;
+    padding: 10px;
+    background-color: #5a4035;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+    .form-box button:hover {
+        background-color: #4b3229;
+    }
+
+.form-box a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #5a4035;
+}
+
+.info-text {
+    font-size: 12px;
+    color: #666;
+}
+
+    .info-text a {
+        color: #5a4035;
+    }
+/*Responzivnost - prilagođavanje stranice za uređaje do 768px*/
+@media (max-width: 768px) {
+    .main h2, .main p {
+        display: none; /*Omogućava da se h2 i p ne prikazuju na ovim uređajima*/
+    }
+
+    #btn {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        padding: 7px 20px;
+        border-radius: 20px;
+    }
+
+    .main {
+        position: relative;
+        min-height: 300px;
+        padding: 40px 20px;
+    }
+
+    .main {
+        background-image: url(images/background-media.png);
+        background-size: cover;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        padding-top: 10px;
+    }
+
+    .navbar {
+        background-color: white !important;
+    }
+    /* Navbar - sakrivanje ikonica na manjim uređajima */
+    .icon-group {
+        display: none !important;
+    }
+
+    .offer {
+        margin-top: 60px;
+    }
+
+    .offer-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .offer-content {
+        width: 90%;
+        margin-top: 10px;
+        margin-left: 3px;
+    }
+
+        .offer-content p {
+            margin-left: 10px;
+            padding-bottom: 0;
+        }
+
+    .offer h1 {
+        font-size: 40px;
+    }
+
+    .offer-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .location {
+        padding-left: 2px;
+    }
+
+    .location-content {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .text {
+        width: 90%;
+        text-align: start;
+    }
+
+    .location-image {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+        .location-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+    .news {
+        margin-top: 40px;
+        padding: 10px 2px;
+    }
+
+    .news-container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        text-align: start;
+    }
+
+    .news-content {
+        width: 90%;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    .news-container a {
+        font-size: 20px;
+    }
+
+    .news-content img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .news h1 {
+        padding-left: 30px;
+        font-size: 35px;
+    }
+
+    .other {
+        margin-top: 45px;
+        padding: 10px 2px;
+    }
+
+    .other-container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        text-align: start;
+    }
+
+    .other-content {
+        width: 90%;
+        margin-top: 25px;
+        margin-left: 5px;
+    }
+
+    .other-container a {
+        font-size: 20px;
+    }
+
+    .other-content img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .other-title h1 {
+        font-size: 30px;
+        padding-left: 30px;
+    }
+
+    .quality {
+        padding-left: 2px;
+    }
+
+    .quality-content {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .text-quality {
+        width: 90%;
+        text-align: start;
+    }
+
+    .quality-image {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+        .quality-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+    .sponsor-container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .information p {
+            font-size: 12px;
+            line-height: 2;
+            margin: 15px 0;
+        }
+
+    .footer {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .victus {
+        padding-bottom: 40px;
+        padding-top: 30px;
+    }
+
+    .help-content {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .information-content, .pay-content, .help-content, .private-content {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .information h2 {
+        font-size: 16px;
+    }
+
+    .information-image {
+        justify-content: center;
+    }
+
+    .form-container {
+        display: grid;
+    }
+
+    .form-box {
+        width: auto;
+        margin: 10px;
+    }
+}
+/*Responzivnost - prilagođavanje stranice za uređaje od 769-1024px*/
+@media (min-width:769px) and (max-width: 1024px) {
+    .navbar {
+        background-color: white !important;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+        .main h2, .main p {
+            display: none;
+        }
+
+    .offer-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
+    }
+
+    .text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .location-image {
+        width: 50%;
+        padding-right: 30px;
+    }
+
+    .text-quality {
+        padding-right: 30px;
+    }
+
+        .text-quality p {
+            font-size: 18px;
+        }
+
+    .quality-image {
+        width: 50%;
+    }
+
+    .news-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .news-content {
+        max-width: 48%;
+    }
+
+        .news-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+    .news-container a {
+        font-size: 22px;
+    }
+
+    .other-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1px;
+        justify-content: space-between;
+    }
+
+    .other-content {
+        max-width: 48%;
+    }
+
+        .other-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+    .other-container a {
+        font-size: 22px;
+    }
+
+    .sponsor-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .sponsor2 {
+        width: 40%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .sponsor-content h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .sponsor-content p {
+        font-size: 16px;
+        color: #666;
+    }
+
+    .help-content {
+        padding-top: 30px;
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .victus {
+        padding-bottom: 50px;
+    }
+}
+/*Responzivnost - prilagođavanje stranice za uređaje koji su minimalno 769px*/
+@media (min-width: 769px) {
+    .offer {
+        justify-content: center; /* Horizontalno centriranje */
+        align-items: center; /* Vertikalno centriranje */
+        margin: 0 auto; /* Centriranje cijelog diva */
+        max-width: 1300px;
+        margin-top: 50px;
+    }
+
+    .location-content, .quality-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .location-image img, .quality-image img {
+        width: 100%;
+        height: auto;
+        max-width: 580px;
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    .text, .text-quality {
+        width: 50%;
+        text-align: left;
+    }
+
+    .news {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 1300px;
+        margin-top: 70px;
+    }
+
+    .other {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1300px;
+        margin-top: 70px;
+    }
+}
+/*Responzivnost - prilagođavanje stranice za uređaje koji su minimalno 1025px*/
+@media(min-width: 1025px) {
+    .news-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .news-content {
+        max-width: 28%;
+    }
+
+        .news-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+    .news-container a {
+        font-size: 22px;
+    }
+
+    .other-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1px;
+        justify-content: space-between;
+    }
+
+    .other-content {
+        max-width: 28%;
+    }
+
+        .other-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+    .other-container a {
+        font-size: 22px;
+    }
+}
+#korpaLista {
+    list-style-type: none;
+}
+
+#korpaPrikaz h4 {
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+#zatvori {
+    margin-left: 30px;
+}
+
+#korpaLista li {
+    margin-bottom: 15px; /* ili koliko ti odgovara */
+}
+
+.stavka-korpe {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 20px; /* razmak između slike i detalja */
+}
+
+.korpa-slika {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.korpa-detalji {
+    flex: 1;
+}

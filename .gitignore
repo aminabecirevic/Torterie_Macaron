@@ -1,0 +1,22 @@
+# Build folders
+Projektni zadatak - RWA/bin/
+Projektni zadatak - RWA/obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.exe
+*.dll
+*.cache
+*.log
+
+# Rider
+.idea/
+
+# Packages
+*.nupkg
+*.snupkg
+
+# Others
+*.dbmdl
